@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirm your trip | Mahi Travels</title>
+  <meta name="description" content="Submit a travel booking enquiry using a JavaScript validated booking form.">
+  <meta name="keywords" content="travel booking, enquiry form, package booking">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Mahi Travels</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html" class="active">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-banner"><div class="container"><h1>Travel Booking </h1><p>Submit your travel enquiry. JavaScript will validate the form.</p></div></section>
+<section class="container section form-section">
+  <h2>Confirm Your Trip</h2>
+  <form id="bookingForm">
+    <label for="name">Full Name</label><input type="text" id="name" placeholder="Enter your name" required>
+    <label for="email">Email Address</label><input type="email" id="email" placeholder="Enter your email" required>
+    <label for="phone">Mobile Number</label><input type="tel" id="phone" placeholder="Enter 10-digit mobile number" required>
+    <label for="destination">Select your Destination</label><select id="destination" required><option value="">Select Destination</option><option value="Goa">Goa</option><option value="Ooty">Ooty</option><option value="Manali">Manali</option><option value="Pondicherry">Pondicherry</option></select>
+    <label for="message">Drop a Message</label><textarea id="message" rows="4" placeholder="Tell us your travel needs"></textarea>
+    <button class="btn" type="submit">Proceed</button><p id="formMessage" class="result"></p>
+    <p class="highlight">We Will contact you within 24 hours after submission.</p>
+  </form>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Mahi Travels</h3>
+      <p>Travel beyond expectations with comfort and confidence.</p>
+    </div>
+    <div>
+      <h3>Useful Links</h3>
+      <p><a href="destinations.html">Destinations</a> | <a href="packages.html">Packages</a> | <a href="booking.html">Book Now</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Email: info@mahitravels.com<br>Phone: +91-8978675422</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 Mahi Travels.A responsive travel website built for academic project submission.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
